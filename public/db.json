@@ -1,0 +1,28 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "First Post",
+        "content": "What is Node.js? Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world."
+      },
+
+      {
+        "id": 2,
+        "title": "Numero Dos Post",
+        "content": "Lorem ipsum dolor"
+      },
+
+      {
+        "id": 3,
+        "title": "3rd Post",
+        "content": "Water is wet. Is it though?"
+      },
+
+      {
+        "id": 4,
+        "title": "Post 4",
+        "content": "Real Madrid is the best team in the world"
+      }
+    ]
+  }
+  

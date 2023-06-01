@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --color-bg: #eef0f1;
+  --color-text: #08090a;
+  --color-blue: #3b49df;
+  --color-red: #df3b3b;
+  --color-green: #3bdf72;
+  --color-gray: #b5bdc4;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  color: var(--color-blue);
+}
+
+#posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#posts .card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px; /* Increased padding */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--color-blue); /* Added border */
+}
+
+#posts .card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; /* Increased font size */
+}
+
+@media (max-width: 767px) {
+  #posts {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 989px) {
+  #posts {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@media (min-width: 990px) {
+  #posts {
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+  }
+}
+
+
+button#newPostButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: var(--color-blue);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button#newPostButton:hover {
+  background: var(--color-green);
+}
